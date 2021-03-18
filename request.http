@@ -1,0 +1,15 @@
+### Create Tweet
+POST http://localhost:3000/tweets
+Content-Type: application/json
+
+{
+    "autor": "syl_torres",
+    "cuerpo": "Wiiiiiiiiiiiiiiiiiiiiiiiiiii"
+}
+
+
+### Get all tweets
+GET http://localhost:3000/tweets
+
+### Delete Tweet
+DELETE http://localhost:3000/tweets/6053c859c7912f373046f123
