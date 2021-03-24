@@ -6,7 +6,7 @@
 - [X] Implementar sistema para crear, eliminar y mostrar mensajes
 - [ ] Implementar sistema de usuarios
     - [ ] Implementar sistema de creación de usuarios
-     - [ ] Añadir sistema para cifrar las contraseñas
+        - [ ] Añadir sistema para cifrar las contraseñas
     - [ ] Crear autenticación
     - [ ] Sistema de tokens con JWT
     - [ ] Implementar sistema de seguidores y seguidos
