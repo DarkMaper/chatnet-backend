@@ -1,7 +1,7 @@
 import express, {Application} from "express";
 import morgan from 'morgan';
 
-import { TweetRoutes } from './routes';
+import { TweetRoutes, UserRoutes } from './routes';
 
 export default class App {
 
@@ -9,6 +9,7 @@ export default class App {
     private port: number;
 
     private tweetRoutes: TweetRoutes;
+    private userRoutes: UserRoutes;
 
     constructor(port: number = 3000) {
         this.app = express();
@@ -16,6 +17,7 @@ export default class App {
         this.port = process.env.PORT && parseInt(process.env.PORT) || port;
 
         this.tweetRoutes = new TweetRoutes();
+        this.userRoutes = new UserRoutes();
 
         this.middlewares();
         this.routes();
@@ -29,6 +31,7 @@ export default class App {
 
     private routes() {
         this.app.use('/tweets', this.tweetRoutes.router);
+        this.app.use('/user', this.userRoutes.router);
     }
 
 
