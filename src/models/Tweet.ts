@@ -1,4 +1,4 @@
-import { model, Schema, Types } from 'mongoose';
+import { model, Schema } from 'mongoose';
 import { ITweet, ITweetModel } from './interfaces/tweet.interfaces'
 
 const TweetSchema: Schema<ITweet, ITweetModel> = new Schema<ITweet,ITweetModel>({
